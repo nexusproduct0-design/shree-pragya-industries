@@ -1,0 +1,1725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Shree Pragya Industries - India's trusted premium peeled garlic supplier from Dalauda, Mandsaur, MP. Fresh peeled garlic, nitrogen packed garlic, garlic paste & powder. Bulk supply across India.">
+<meta name="keywords" content="peeled garlic supplier India, bulk garlic, nitrogen packed garlic, garlic paste, garlic powder, Mandsaur garlic, MP garlic manufacturer">
+<title>Shree Pragya Industries | Premium Peeled Garlic Supplier – India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Jost:wght@300;400;500;600;700&family=Italiana&display=swap" rel="stylesheet">
+<style>
+:root {
+  --gold: #C9A84C;
+  --gold-light: #E8C97A;
+  --gold-dark: #8B6914;
+  --green: #2D5016;
+  --green-mid: #3D6B1E;
+  --green-light: #5A9B2E;
+  --green-pale: #8DC56B;
+  --bg-warm: #FAF7F2;
+  --bg-dark: #0D1208;
+  --bg-dark2: #111A08;
+  --bg-dark3: #162010;
+  --bg-card: rgba(255,255,255,0.04);
+  --text-light: #F5F0E8;
+  --text-muted: rgba(245,240,232,0.6);
+  --glass: rgba(255,255,255,0.06);
+  --glass-border: rgba(201,168,76,0.2);
+  --font-serif: 'Cormorant Garamond', serif;
+  --font-sans: 'Jost', sans-serif;
+  --font-display: 'Italiana', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-dark);
+  color: var(--text-light);
+  overflow-x: hidden;
+  cursor: default;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--bg-dark); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 2px; }
+
+/* ─── NAVBAR ─── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+  padding: 0 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+  background: rgba(13,18,8,0.85);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,168,76,0.15);
+  transition: all 0.3s;
+}
+nav.scrolled {
+  height: 60px;
+  background: rgba(13,18,8,0.97);
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 12px; text-decoration: none;
+}
+.nav-logo-icon {
+  width: 40px; height: 40px;
+  border: 1.5px solid var(--gold);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 18px; color: var(--gold);
+  position: relative;
+}
+.nav-logo-icon::after {
+  content: '';
+  position: absolute; inset: 3px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201,168,76,0.15) 0%, transparent 70%);
+}
+.nav-logo-text { display: flex; flex-direction: column; }
+.nav-logo-name {
+  font-family: var(--font-serif);
+  font-size: 16px; font-weight: 600;
+  color: var(--gold-light); letter-spacing: 0.05em;
+  line-height: 1;
+}
+.nav-logo-sub {
+  font-size: 10px; color: var(--text-muted);
+  letter-spacing: 0.15em; text-transform: uppercase; margin-top: 2px;
+}
+.nav-links {
+  display: flex; gap: 32px; list-style: none;
+}
+.nav-links a {
+  text-decoration: none; color: var(--text-muted);
+  font-size: 13px; font-weight: 500; letter-spacing: 0.08em;
+  text-transform: uppercase; transition: color 0.3s;
+  position: relative;
+}
+.nav-links a::after {
+  content: ''; position: absolute; bottom: -4px; left: 0; right: 0;
+  height: 1px; background: var(--gold);
+  transform: scaleX(0); transition: transform 0.3s; transform-origin: left;
+}
+.nav-links a:hover { color: var(--gold-light); }
+.nav-links a:hover::after { transform: scaleX(1); }
+.nav-cta {
+  padding: 9px 22px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  border: none; border-radius: 2px;
+  color: var(--bg-dark); font-family: var(--font-sans);
+  font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+  text-transform: uppercase; cursor: pointer; text-decoration: none;
+  transition: all 0.3s;
+}
+.nav-cta:hover {
+  background: linear-gradient(135deg, var(--gold), var(--gold-light));
+  transform: translateY(-1px);
+}
+.nav-hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.nav-hamburger span { display: block; width: 24px; height: 2px; background: var(--gold); border-radius: 2px; transition: all 0.3s; }
+.mobile-menu {
+  display: none; position: fixed; top: 72px; left: 0; right: 0;
+  background: rgba(13,18,8,0.98); padding: 20px 5%;
+  border-bottom: 1px solid var(--glass-border); z-index: 999;
+}
+.mobile-menu.open { display: flex; flex-direction: column; gap: 16px; }
+.mobile-menu a {
+  text-decoration: none; color: var(--text-muted);
+  font-size: 14px; padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  letter-spacing: 0.08em; text-transform: uppercase;
+}
+
+/* ─── HERO ─── */
+#hero {
+  min-height: 100vh;
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+  position: relative; overflow: hidden; padding: 100px 5% 60px;
+  background: radial-gradient(ellipse 80% 60% at 50% 60%, rgba(45,80,22,0.3) 0%, var(--bg-dark) 70%);
+}
+.hero-particles {
+  position: absolute; inset: 0; overflow: hidden; pointer-events: none;
+}
+.particle {
+  position: absolute; border-radius: 50%;
+  background: var(--gold); opacity: 0;
+  animation: floatParticle linear infinite;
+}
+@keyframes floatParticle {
+  0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.4; }
+  90% { opacity: 0.2; }
+  100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid var(--glass-border);
+  background: rgba(201,168,76,0.08);
+  padding: 6px 18px; border-radius: 100px;
+  font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold-light); margin-bottom: 28px;
+  animation: fadeInUp 0.8s ease both;
+}
+.hero-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green-pale); animation: pulse 2s ease infinite; }
+@keyframes pulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.5);opacity:0.6} }
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  line-height: 1.1; text-align: center;
+  color: var(--text-light);
+  animation: fadeInUp 0.9s 0.1s ease both;
+  max-width: 900px;
+}
+.hero-title span { color: var(--gold-light); display: block; }
+.hero-subtitle {
+  font-size: clamp(14px,1.5vw,17px); color: var(--text-muted);
+  text-align: center; margin-top: 20px; letter-spacing: 0.12em;
+  animation: fadeInUp 1s 0.2s ease both; max-width: 600px;
+  font-weight: 300;
+}
+.hero-subtitle strong { color: var(--gold); font-weight: 500; }
+.hero-cta-row {
+  display: flex; gap: 16px; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+  animation: fadeInUp 1s 0.3s ease both;
+}
+.btn-primary {
+  padding: 14px 36px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  border: none; border-radius: 2px;
+  color: var(--bg-dark); font-family: var(--font-sans);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.12em;
+  text-transform: uppercase; cursor: pointer; text-decoration: none;
+  transition: all 0.3s; display: inline-block;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.35); }
+.btn-secondary {
+  padding: 13px 36px;
+  background: transparent;
+  border: 1px solid rgba(201,168,76,0.5); border-radius: 2px;
+  color: var(--gold-light); font-family: var(--font-sans);
+  font-size: 13px; font-weight: 500; letter-spacing: 0.12em;
+  text-transform: uppercase; cursor: pointer; text-decoration: none;
+  transition: all 0.3s; display: inline-block;
+}
+.btn-secondary:hover {
+  background: rgba(201,168,76,0.1); border-color: var(--gold);
+  transform: translateY(-2px);
+}
+
+/* 3D GARLIC SCENE */
+.garlic-scene {
+  width: 340px; height: 340px;
+  position: relative; margin: 50px auto 0;
+  perspective: 1000px;
+  animation: fadeInUp 1s 0.4s ease both;
+}
+.garlic-3d {
+  width: 100%; height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spinSlow 18s linear infinite;
+}
+@keyframes spinSlow { from{transform:rotateY(0deg) rotateX(8deg)} to{transform:rotateY(360deg) rotateX(8deg)} }
+.garlic-bulb-svg {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  filter: drop-shadow(0 0 40px rgba(201,168,76,0.3)) drop-shadow(0 20px 60px rgba(0,0,0,0.5));
+}
+.garlic-glow {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -30%);
+  width: 200px; height: 80px;
+  background: radial-gradient(ellipse, rgba(201,168,76,0.2) 0%, transparent 70%);
+  border-radius: 50%; filter: blur(20px);
+}
+.garlic-ring {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotateX(80deg);
+  width: 280px; height: 280px; border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.2);
+  animation: ringRotate 8s linear infinite;
+}
+.garlic-ring2 {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%, -50%) rotateX(70deg) rotateZ(45deg);
+  width: 320px; height: 320px; border-radius: 50%;
+  border: 1px solid rgba(90,155,46,0.15);
+  animation: ringRotate 12s linear infinite reverse;
+}
+@keyframes ringRotate { from{transform:translate(-50%,-50%) rotateX(80deg) rotateZ(0deg)} to{transform:translate(-50%,-50%) rotateX(80deg) rotateZ(360deg)} }
+
+.hero-stats {
+  display: flex; gap: 40px; margin-top: 40px; flex-wrap: wrap; justify-content: center;
+  animation: fadeInUp 1s 0.5s ease both;
+}
+.hero-stat { text-align: center; }
+.hero-stat-num {
+  font-family: var(--font-serif);
+  font-size: 28px; font-weight: 700; color: var(--gold-light);
+  display: block;
+}
+.hero-stat-label { font-size: 11px; color: var(--text-muted); letter-spacing: 0.1em; text-transform: uppercase; }
+
+.scroll-indicator {
+  position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--text-muted); font-size: 10px; letter-spacing: 0.2em; text-transform: uppercase;
+  animation: fadeInUp 1s 0.8s ease both;
+}
+.scroll-line {
+  width: 1px; height: 40px;
+  background: linear-gradient(to bottom, var(--gold), transparent);
+  animation: scrollPulse 2s ease infinite;
+}
+@keyframes scrollPulse { 0%,100%{opacity:1;transform:scaleY(1)} 50%{opacity:0.4;transform:scaleY(0.6)} }
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── SECTION COMMONS ─── */
+section { padding: 100px 5%; }
+.section-label {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 16px;
+}
+.section-label::before {
+  content: ''; display: block; width: 28px; height: 1px; background: var(--gold);
+}
+.section-title {
+  font-family: var(--font-serif);
+  font-size: clamp(2rem, 4vw, 3.2rem); font-weight: 600;
+  line-height: 1.15; color: var(--text-light);
+}
+.section-title em { color: var(--gold-light); font-style: normal; }
+.section-divider {
+  width: 60px; height: 2px; margin: 24px 0;
+  background: linear-gradient(to right, var(--gold), transparent);
+}
+.section-text { color: var(--text-muted); line-height: 1.8; font-size: 15px; font-weight: 300; max-width: 520px; }
+
+/* ─── MARQUEE ─── */
+.marquee-wrap {
+  overflow: hidden; border-top: 1px solid rgba(201,168,76,0.12); border-bottom: 1px solid rgba(201,168,76,0.12);
+  background: rgba(201,168,76,0.04); padding: 18px 0;
+}
+.marquee-track {
+  display: flex; gap: 60px; width: max-content;
+  animation: marquee 30s linear infinite;
+}
+.marquee-item {
+  display: flex; align-items: center; gap: 12px;
+  font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--gold); white-space: nowrap; font-weight: 500;
+}
+.marquee-dot { width: 4px; height: 4px; border-radius: 50%; background: var(--gold); opacity: 0.5; }
+@keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+
+/* ─── ABOUT ─── */
+#about {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+  background: var(--bg-dark2);
+}
+.about-visual {
+  position: relative;
+}
+.about-img-frame {
+  width: 100%; aspect-ratio: 4/5; max-width: 420px;
+  border: 1px solid var(--glass-border); border-radius: 4px;
+  overflow: hidden; position: relative;
+  background: linear-gradient(135deg, rgba(45,80,22,0.4) 0%, rgba(13,18,8,0.9) 100%);
+}
+.about-img-inner {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 24px; padding: 40px;
+  position: relative;
+}
+.about-garlic-icon {
+  font-size: 80px; opacity: 0.9;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+.about-badge-row {
+  display: flex; gap: 12px; flex-wrap: wrap; justify-content: center;
+}
+.about-badge {
+  padding: 6px 16px; background: rgba(201,168,76,0.1);
+  border: 1px solid rgba(201,168,76,0.25); border-radius: 100px;
+  font-size: 11px; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.about-corner {
+  position: absolute; width: 40px; height: 40px;
+  border-color: var(--gold);
+}
+.about-corner-tl { top: -1px; left: -1px; border-top: 2px solid; border-left: 2px solid; }
+.about-corner-br { bottom: -1px; right: -1px; border-bottom: 2px solid; border-right: 2px solid; }
+.about-floater {
+  position: absolute; background: var(--glass);
+  border: 1px solid var(--glass-border); backdrop-filter: blur(10px);
+  border-radius: 4px; padding: 14px 18px;
+}
+.about-floater-1 { bottom: -20px; right: -30px; }
+.about-floater-2 { top: 30px; left: -30px; }
+.about-floater-num { font-family: var(--font-serif); font-size: 24px; color: var(--gold-light); font-weight: 600; }
+.about-floater-text { font-size: 11px; color: var(--text-muted); letter-spacing: 0.08em; }
+.about-features { display: flex; flex-direction: column; gap: 16px; margin-top: 36px; }
+.about-feature {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 16px; background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 4px;
+  transition: all 0.3s;
+}
+.about-feature:hover {
+  background: rgba(201,168,76,0.06); border-color: rgba(201,168,76,0.2);
+  transform: translateX(4px);
+}
+.about-feature-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+.about-feature-title { font-size: 14px; font-weight: 500; color: var(--text-light); margin-bottom: 4px; }
+.about-feature-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+
+/* ─── WHY CHOOSE ─── */
+#why { background: var(--bg-dark3); }
+.why-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px; margin-top: 60px;
+}
+.why-card {
+  padding: 32px 28px; position: relative;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.06); border-radius: 4px;
+  transition: all 0.4s; overflow: hidden;
+}
+.why-card::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(201,168,76,0.06) 0%, transparent 60%);
+  opacity: 0; transition: opacity 0.4s;
+}
+.why-card:hover { transform: translateY(-6px); border-color: rgba(201,168,76,0.3); }
+.why-card:hover::before { opacity: 1; }
+.why-card-num {
+  font-family: var(--font-serif); font-size: 48px; font-weight: 700;
+  color: rgba(201,168,76,0.1); position: absolute; top: 16px; right: 20px;
+  line-height: 1;
+}
+.why-card-icon { font-size: 36px; margin-bottom: 18px; display: block; }
+.why-card-title { font-size: 16px; font-weight: 600; color: var(--text-light); margin-bottom: 10px; }
+.why-card-desc { font-size: 13px; color: var(--text-muted); line-height: 1.7; }
+.why-card-line {
+  width: 30px; height: 2px; background: var(--gold);
+  margin-top: 16px; transition: width 0.4s;
+}
+.why-card:hover .why-card-line { width: 60px; }
+
+/* ─── PRODUCTS ─── */
+#products { background: var(--bg-dark2); }
+.products-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 28px; margin-top: 60px;
+}
+.product-card {
+  border-radius: 4px; overflow: hidden;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: all 0.4s; position: relative;
+  cursor: pointer;
+}
+.product-card:hover { transform: translateY(-8px) scale(1.01); border-color: var(--gold); box-shadow: 0 20px 60px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,168,76,0.15); }
+.product-visual {
+  height: 200px; position: relative; overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+}
+.product-visual::before {
+  content: ''; position: absolute; inset: 0;
+  background: linear-gradient(135deg, rgba(45,80,22,0.4) 0%, rgba(13,18,8,0.2) 100%);
+}
+.product-emoji { font-size: 80px; position: relative; z-index: 1; transition: transform 0.4s; }
+.product-card:hover .product-emoji { transform: scale(1.15) rotate(5deg); }
+.product-tag {
+  position: absolute; top: 16px; right: 16px; z-index: 2;
+  padding: 4px 12px; background: rgba(201,168,76,0.15);
+  border: 1px solid rgba(201,168,76,0.3); border-radius: 100px;
+  font-size: 10px; color: var(--gold-light); letter-spacing: 0.1em; text-transform: uppercase;
+}
+.product-body { padding: 24px 24px 28px; }
+.product-name { font-family: var(--font-serif); font-size: 22px; color: var(--text-light); margin-bottom: 8px; }
+.product-desc { font-size: 13px; color: var(--text-muted); line-height: 1.7; margin-bottom: 16px; }
+.product-features { display: flex; flex-wrap: wrap; gap: 8px; }
+.product-feat {
+  padding: 4px 10px; border: 1px solid rgba(201,168,76,0.2);
+  border-radius: 2px; font-size: 11px; color: var(--gold);
+  letter-spacing: 0.05em;
+}
+
+/* PRODUCT BG COLORS */
+.product-card:nth-child(1) .product-visual { background: linear-gradient(135deg, #1a3a0a, #0d1208); }
+.product-card:nth-child(2) .product-visual { background: linear-gradient(135deg, #0a2240, #0d1208); }
+.product-card:nth-child(3) .product-visual { background: linear-gradient(135deg, #3a2a0a, #0d1208); }
+.product-card:nth-child(4) .product-visual { background: linear-gradient(135deg, #1a1a0a, #0d1208); }
+
+/* ─── PACKAGING ─── */
+#packaging { background: var(--bg-dark); }
+.packaging-intro { max-width: 560px; }
+.packaging-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 16px; margin-top: 60px;
+}
+.pkg-card {
+  aspect-ratio: 3/4; border-radius: 4px;
+  background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07);
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  gap: 12px; padding: 20px; cursor: pointer; position: relative; overflow: hidden;
+  transition: all 0.35s;
+}
+.pkg-card::after {
+  content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(to right, var(--gold-dark), var(--gold));
+  transform: scaleX(0); transition: transform 0.35s; transform-origin: left;
+}
+.pkg-card:hover { transform: translateY(-6px); border-color: rgba(201,168,76,0.35); background: rgba(201,168,76,0.05); }
+.pkg-card:hover::after { transform: scaleX(1); }
+.pkg-icon { font-size: 42px; transition: transform 0.35s; }
+.pkg-card:hover .pkg-icon { transform: scale(1.2) translateY(-3px); }
+.pkg-weight { font-family: var(--font-serif); font-size: 22px; font-weight: 600; color: var(--gold-light); }
+.pkg-label { font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); }
+.pkg-card.featured { border-color: rgba(201,168,76,0.35); background: rgba(201,168,76,0.06); }
+
+/* ─── PROCESS ─── */
+#process { background: var(--bg-dark3); }
+.process-timeline { margin-top: 70px; position: relative; }
+.process-timeline::before {
+  content: ''; position: absolute; left: 50%; top: 28px; bottom: 28px;
+  width: 1px; background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  transform: translateX(-50%);
+}
+.process-steps { display: flex; flex-direction: column; gap: 0; }
+.process-step {
+  display: grid; grid-template-columns: 1fr 80px 1fr;
+  align-items: center; gap: 0;
+}
+.process-step:nth-child(even) .ps-content { grid-column: 3; order: 1; text-align: left; }
+.process-step:nth-child(even) .ps-center { order: 0; }
+.process-step:nth-child(even) .ps-empty { order: -1; }
+.ps-content {
+  padding: 28px; background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07); border-radius: 4px;
+  text-align: right; transition: all 0.4s; margin: 8px 0;
+}
+.process-step:nth-child(even) .ps-content { text-align: left; }
+.ps-content:hover { border-color: rgba(201,168,76,0.3); background: rgba(201,168,76,0.05); }
+.ps-num { font-size: 10px; letter-spacing: 0.15em; color: var(--gold); text-transform: uppercase; }
+.ps-title { font-family: var(--font-serif); font-size: 20px; color: var(--text-light); margin: 6px 0; }
+.ps-desc { font-size: 13px; color: var(--text-muted); line-height: 1.6; }
+.ps-center { display: flex; align-items: center; justify-content: center; }
+.ps-dot {
+  width: 50px; height: 50px; border-radius: 50%;
+  border: 2px solid var(--gold); background: var(--bg-dark3);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px; z-index: 1;
+  box-shadow: 0 0 0 6px rgba(201,168,76,0.08), 0 0 0 12px rgba(201,168,76,0.04);
+  transition: all 0.4s;
+}
+.ps-dot:hover { transform: scale(1.1); box-shadow: 0 0 20px rgba(201,168,76,0.3); }
+.ps-empty { }
+
+/* ─── INDIA MAP (SVG) ─── */
+#supply { background: var(--bg-dark2); }
+.supply-inner {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
+}
+.india-map-wrap {
+  position: relative; display: flex; align-items: center; justify-content: center;
+}
+.india-svg { max-width: 360px; width: 100%; }
+.india-svg path {
+  fill: rgba(45,80,22,0.3); stroke: rgba(201,168,76,0.4); stroke-width: 0.5;
+  transition: fill 0.3s;
+}
+.india-svg path:hover { fill: rgba(90,155,46,0.4); }
+.india-pin {
+  fill: var(--gold); stroke: var(--gold-dark); stroke-width: 0.5;
+  animation: pinPulse 2s ease infinite;
+}
+@keyframes pinPulse { 0%,100%{transform:scale(1);opacity:1} 50%{transform:scale(1.3);opacity:0.7} }
+.supply-highlights { display: flex; flex-direction: column; gap: 20px; margin-top: 36px; }
+.supply-highlight {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 18px; border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 4px; transition: all 0.3s;
+}
+.supply-highlight:hover { border-color: rgba(201,168,76,0.25); background: rgba(201,168,76,0.04); }
+.sh-icon { font-size: 24px; flex-shrink: 0; }
+.sh-title { font-size: 14px; font-weight: 500; color: var(--text-light); margin-bottom: 4px; }
+.sh-text { font-size: 13px; color: var(--text-muted); }
+
+/* ─── STATS ─── */
+#stats {
+  background: linear-gradient(135deg, var(--bg-dark3) 0%, rgba(45,80,22,0.3) 50%, var(--bg-dark3) 100%);
+  padding: 80px 5%;
+}
+.stats-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+  border: 1px solid rgba(201,168,76,0.15); border-radius: 4px; overflow: hidden;
+}
+.stat-item {
+  padding: 50px 30px; text-align: center;
+  background: rgba(255,255,255,0.025);
+  border-right: 1px solid rgba(201,168,76,0.1);
+  position: relative; overflow: hidden; transition: background 0.4s;
+}
+.stat-item:last-child { border-right: none; }
+.stat-item::before {
+  content: ''; position: absolute; bottom: 0; left: 10%; right: 10%; height: 2px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  transform: scaleX(0); transition: transform 0.5s;
+}
+.stat-item:hover { background: rgba(201,168,76,0.06); }
+.stat-item:hover::before { transform: scaleX(1); }
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 4vw, 3.8rem); color: var(--gold-light);
+  display: block; line-height: 1;
+}
+.stat-suffix { color: var(--gold); }
+.stat-label { font-size: 12px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; }
+
+/* ─── TESTIMONIALS ─── */
+#testimonials { background: var(--bg-dark); }
+.testi-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px; margin-top: 60px;
+}
+.testi-card {
+  padding: 32px; border-radius: 4px;
+  background: rgba(255,255,255,0.025);
+  border: 1px solid rgba(255,255,255,0.07);
+  position: relative; transition: all 0.4s;
+}
+.testi-card:hover { border-color: rgba(201,168,76,0.25); transform: translateY(-4px); }
+.testi-quote {
+  font-family: var(--font-serif); font-size: 60px; color: rgba(201,168,76,0.15);
+  line-height: 0.6; position: absolute; top: 24px; left: 28px;
+}
+.testi-stars { color: var(--gold); font-size: 14px; margin-bottom: 16px; }
+.testi-text {
+  font-family: var(--font-serif); font-size: 17px; line-height: 1.7;
+  color: var(--text-muted); font-style: italic; margin-bottom: 24px; padding-top: 8px;
+}
+.testi-author { display: flex; align-items: center; gap: 12px; }
+.testi-avatar {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; background: rgba(45,80,22,0.3);
+}
+.testi-name { font-size: 14px; font-weight: 600; color: var(--text-light); }
+.testi-role { font-size: 12px; color: var(--text-muted); }
+.testi-location { font-size: 11px; color: var(--gold); margin-top: 2px; }
+
+/* ─── CONTACT ─── */
+#contact { background: var(--bg-dark2); }
+.contact-inner { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; }
+.contact-info { }
+.contact-detail { display: flex; align-items: flex-start; gap: 14px; margin-bottom: 28px; }
+.contact-detail-icon { font-size: 22px; margin-top: 2px; flex-shrink: 0; }
+.contact-detail-label { font-size: 11px; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; margin-bottom: 4px; }
+.contact-detail-text { font-size: 15px; color: var(--text-light); line-height: 1.5; }
+.contact-detail-text small { color: var(--text-muted); font-size: 13px; }
+.contact-form { display: flex; flex-direction: column; gap: 16px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 11px; letter-spacing: 0.12em; color: var(--gold); text-transform: uppercase; }
+.form-input, .form-select, .form-textarea {
+  background: rgba(255,255,255,0.04); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 2px; padding: 12px 16px;
+  color: var(--text-light); font-family: var(--font-sans); font-size: 14px;
+  transition: all 0.3s; width: 100%;
+}
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  outline: none; border-color: var(--gold);
+  background: rgba(201,168,76,0.06);
+}
+.form-input::placeholder, .form-textarea::placeholder { color: rgba(245,240,232,0.25); }
+.form-textarea { resize: vertical; min-height: 110px; }
+.form-select option { background: var(--bg-dark); color: var(--text-light); }
+.form-submit {
+  padding: 15px; width: 100%;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold));
+  border: none; border-radius: 2px; cursor: pointer;
+  color: var(--bg-dark); font-family: var(--font-sans);
+  font-size: 13px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  transition: all 0.3s; margin-top: 8px;
+}
+.form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(201,168,76,0.3); }
+.form-success {
+  display: none; text-align: center; padding: 24px;
+  background: rgba(90,155,46,0.1); border: 1px solid rgba(90,155,46,0.3);
+  border-radius: 4px; color: var(--green-pale);
+}
+
+/* ─── FOOTER ─── */
+footer {
+  background: #080C05; border-top: 1px solid rgba(201,168,76,0.1);
+  padding: 70px 5% 30px;
+}
+.footer-top {
+  display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 50px; margin-bottom: 60px;
+}
+.footer-brand-name {
+  font-family: var(--font-serif); font-size: 22px; color: var(--gold-light); margin-bottom: 12px;
+}
+.footer-brand-text { font-size: 13px; color: var(--text-muted); line-height: 1.7; max-width: 280px; }
+.footer-col-title {
+  font-size: 11px; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 20px; display: flex; align-items: center; gap: 8px;
+}
+.footer-col-title::after { content: ''; flex: 1; height: 1px; background: rgba(201,168,76,0.15); }
+.footer-links { display: flex; flex-direction: column; gap: 10px; }
+.footer-links a {
+  text-decoration: none; color: var(--text-muted);
+  font-size: 13px; transition: color 0.3s; display: flex; align-items: center; gap: 6px;
+}
+.footer-links a:hover { color: var(--gold-light); }
+.footer-links a::before { content: '›'; color: var(--gold); font-size: 16px; opacity: 0; transition: opacity 0.3s; }
+.footer-links a:hover::before { opacity: 1; }
+.footer-bottom {
+  display: flex; align-items: center; justify-content: space-between; flex-wrap: gap;
+  padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.05);
+  gap: 16px;
+}
+.footer-copy { font-size: 12px; color: var(--text-muted); }
+.footer-copy span { color: var(--gold); }
+.social-links { display: flex; gap: 12px; }
+.social-link {
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(201,168,76,0.2);
+  display: flex; align-items: center; justify-content: center;
+  text-decoration: none; color: var(--text-muted);
+  font-size: 14px; transition: all 0.3s;
+}
+.social-link:hover { border-color: var(--gold); color: var(--gold); transform: translateY(-2px); }
+.footer-founders {
+  display: flex; gap: 24px; margin-top: 20px; flex-wrap: wrap;
+}
+.founder-chip {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 14px; border: 1px solid rgba(201,168,76,0.15);
+  border-radius: 100px; font-size: 12px; color: var(--text-muted);
+}
+.founder-chip span { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); }
+
+/* ─── WHATSAPP FLOAT ─── */
+.whatsapp-float {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25D366; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+  transition: all 0.3s; text-decoration: none;
+  animation: waBounce 3s ease infinite 2s;
+}
+.whatsapp-float:hover { transform: scale(1.12) translateY(-2px); box-shadow: 0 8px 30px rgba(37,211,102,0.5); }
+@keyframes waBounce { 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+.whatsapp-float svg { width: 28px; height: 28px; fill: white; }
+.wa-tooltip {
+  position: absolute; right: 68px; background: rgba(13,18,8,0.95);
+  border: 1px solid rgba(37,211,102,0.3); border-radius: 4px; padding: 6px 12px;
+  font-size: 12px; color: var(--text-light); white-space: nowrap;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s;
+}
+.whatsapp-float:hover .wa-tooltip { opacity: 1; }
+
+/* ─── ANIMATIONS / REVEAL ─── */
+.reveal {
+  opacity: 0; transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  #about { grid-template-columns: 1fr; gap: 50px; }
+  .supply-inner { grid-template-columns: 1fr; gap: 50px; }
+  .contact-inner { grid-template-columns: 1fr; gap: 50px; }
+  .footer-top { grid-template-columns: 1fr 1fr; gap: 36px; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-item { border-bottom: 1px solid rgba(201,168,76,0.1); }
+  .process-timeline::before { left: 28px; }
+  .process-step { grid-template-columns: 60px 1fr; }
+  .process-step:nth-child(odd) .ps-content,
+  .process-step:nth-child(even) .ps-content { text-align: left; order: 1; }
+  .ps-center { order: 0; }
+  .ps-empty { display: none; }
+  .about-floater { display: none; }
+}
+@media (max-width: 640px) {
+  nav .nav-links { display: none; }
+  .nav-hamburger { display: flex; }
+  .hero-title { font-size: 2.4rem; }
+  .footer-top { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .form-row { grid-template-columns: 1fr; }
+  section { padding: 70px 5%; }
+  .garlic-scene { width: 260px; height: 260px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-icon">🧄</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-name">Shree Pragya Industries</span>
+      <span class="nav-logo-sub">Premium Garlic Supplier</span>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#packaging">Packaging</a></li>
+    <li><a href="#process">Process</a></li>
+    <li><a href="#supply">Supply</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Quote</a>
+  <div class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="toggleMenu()">About</a>
+  <a href="#products" onclick="toggleMenu()">Products</a>
+  <a href="#packaging" onclick="toggleMenu()">Packaging</a>
+  <a href="#process" onclick="toggleMenu()">Process</a>
+  <a href="#supply" onclick="toggleMenu()">Supply Network</a>
+  <a href="#contact" onclick="toggleMenu()">Contact & Quote</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-particles" id="particles"></div>
+
+  <div class="hero-badge">
+    <span class="hero-badge-dot"></span>
+    Trusted since establishment · Dalauda, Madhya Pradesh
+  </div>
+
+  <h1 class="hero-title">
+    India's Trusted<br>
+    <span>Premium Peeled Garlic</span>
+    Supplier
+  </h1>
+
+  <p class="hero-subtitle">
+    <strong>Fresh</strong> &nbsp;•&nbsp; <strong>Hygienic</strong> &nbsp;•&nbsp;
+    <strong>Nitrogen Packed</strong> &nbsp;•&nbsp; <strong>Delivered Across India</strong>
+  </p>
+
+  <div class="hero-cta-row">
+    <a href="#contact" class="btn-primary">Get a Free Quote</a>
+    <a href="tel:+917223903797" class="btn-secondary">📞 Contact Us</a>
+  </div>
+
+  <!-- 3D GARLIC SCENE -->
+  <div class="garlic-scene">
+    <div class="garlic-3d">
+      <div class="garlic-ring"></div>
+      <div class="garlic-ring2"></div>
+      <div class="garlic-glow"></div>
+      <svg class="garlic-bulb-svg" width="220" height="220" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg">
+        <!-- Garlic bulb -->
+        <defs>
+          <radialGradient id="bulbGrad" cx="35%" cy="30%" r="65%">
+            <stop offset="0%" stop-color="#F5EDD8"/>
+            <stop offset="40%" stop-color="#E8D9B0"/>
+            <stop offset="100%" stop-color="#C4A96B"/>
+          </radialGradient>
+          <radialGradient id="cloveGrad1" cx="30%" cy="25%" r="70%">
+            <stop offset="0%" stop-color="#F0E5C8"/>
+            <stop offset="100%" stop-color="#B89550"/>
+          </radialGradient>
+          <radialGradient id="rootGrad" cx="50%" cy="0%" r="100%">
+            <stop offset="0%" stop-color="#A07830"/>
+            <stop offset="100%" stop-color="#6B4F1A"/>
+          </radialGradient>
+          <filter id="garlicShadow">
+            <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="rgba(0,0,0,0.5)"/>
+          </filter>
+        </defs>
+        <g filter="url(#garlicShadow)">
+          <!-- Main bulb body -->
+          <ellipse cx="110" cy="125" rx="62" ry="56" fill="url(#bulbGrad)"/>
+          <!-- Outer skin lines (clove separations) -->
+          <path d="M110 70 Q88 85 78 115 Q82 148 110 162 Q138 148 142 115 Q132 85 110 70Z" fill="none" stroke="rgba(180,140,70,0.5)" stroke-width="1"/>
+          <!-- Left clove -->
+          <ellipse cx="88" cy="118" rx="24" ry="36" fill="url(#cloveGrad1)" transform="rotate(-12, 88, 118)"/>
+          <path d="M76 95 Q82 88 92 92 Q88 98 84 110 Q82 125 85 140 Q78 135 75 120 Q73 108 76 95Z" fill="rgba(255,255,255,0.15)"/>
+          <!-- Right clove -->
+          <ellipse cx="132" cy="118" rx="24" ry="36" fill="url(#cloveGrad1)" transform="rotate(12, 132, 118)"/>
+          <!-- Center clove -->
+          <ellipse cx="110" cy="116" rx="18" ry="40" fill="url(#cloveGrad1)"/>
+          <path d="M102 80 Q106 74 110 72 Q114 74 118 80 Q116 86 110 84 Q104 86 102 80Z" fill="rgba(255,255,255,0.2)"/>
+          <!-- Stem -->
+          <path d="M110 70 Q108 52 104 36 Q108 30 110 28 Q112 30 116 36 Q112 52 110 70Z" fill="#8B7040" stroke="#7A5E30" stroke-width="0.5"/>
+          <!-- Stem leaves -->
+          <path d="M108 56 Q94 48 88 38 Q96 40 104 52Z" fill="#5A8B20" opacity="0.8"/>
+          <path d="M112 52 Q126 44 132 34 Q124 36 116 48Z" fill="#5A8B20" opacity="0.8"/>
+          <!-- Roots -->
+          <path d="M110 181 Q100 188 92 192 M110 181 Q110 190 108 196 M110 181 Q120 188 128 192 M110 181 Q104 187 98 196 M110 181 Q116 187 122 196" stroke="url(#rootGrad)" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <!-- Root disc -->
+          <ellipse cx="110" cy="178" rx="32" ry="8" fill="#9A7040" opacity="0.6"/>
+          <!-- Shine -->
+          <ellipse cx="95" cy="100" rx="14" ry="20" fill="rgba(255,255,255,0.12)" transform="rotate(-15,95,100)"/>
+        </g>
+        <!-- Floating cloves around -->
+        <g opacity="0.7">
+          <ellipse cx="40" cy="80" rx="10" ry="15" fill="url(#cloveGrad1)" transform="rotate(-30,40,80)"/>
+          <ellipse cx="178" cy="90" rx="9" ry="13" fill="url(#cloveGrad1)" transform="rotate(25,178,90)"/>
+          <ellipse cx="55" cy="165" rx="7" ry="11" fill="url(#cloveGrad1)" transform="rotate(15,55,165)"/>
+          <ellipse cx="172" cy="158" rx="8" ry="12" fill="url(#cloveGrad1)" transform="rotate(-20,172,158)"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-target="1000">0</span>
+      <span class="hero-stat-label">Happy Customers</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-target="500">0</span>
+      <span class="hero-stat-label">Tons Processed</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-target="20">0</span>
+      <span class="hero-stat-label">Cities Served</span>
+    </div>
+    <div class="hero-stat">
+      <span class="hero-stat-num" data-target="100">0</span>
+      <span class="hero-stat-label">% Quality Assured</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track" id="marqueeTrack">
+    <span class="marquee-item"><span class="marquee-dot"></span>Fresh Peeled Garlic</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Nitrogen Packed Technology</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Bulk Supply Across India</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Garlic Paste & Powder</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Custom Packaging 250g–30kg</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>ISO Hygienic Processing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Mandsaur, Madhya Pradesh</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Farm to Table Quality</span>
+    <!-- Duplicate for seamless loop -->
+    <span class="marquee-item"><span class="marquee-dot"></span>Fresh Peeled Garlic</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Nitrogen Packed Technology</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Bulk Supply Across India</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Garlic Paste & Powder</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Custom Packaging 250g–30kg</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>ISO Hygienic Processing</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Mandsaur, Madhya Pradesh</span>
+    <span class="marquee-item"><span class="marquee-dot"></span>Farm to Table Quality</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-visual reveal">
+    <div class="about-img-frame">
+      <div class="about-corner about-corner-tl"></div>
+      <div class="about-corner about-corner-br"></div>
+      <div class="about-img-inner">
+        <div class="about-garlic-icon">🧄</div>
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-serif);font-size:1.6rem;color:var(--gold-light);margin-bottom:8px;">Rooted in Quality</div>
+          <div style="font-size:13px;color:var(--text-muted);max-width:220px;line-height:1.6;">From the garlic-rich heartland of Mandsaur, MP, to kitchens and factories across India</div>
+        </div>
+        <div class="about-badge-row">
+          <span class="about-badge">Farm Fresh</span>
+          <span class="about-badge">Hygienic</span>
+          <span class="about-badge">Bulk Ready</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-floater about-floater-1">
+      <div class="about-floater-num">100%</div>
+      <div class="about-floater-text">Quality Assurance</div>
+    </div>
+    <div class="about-floater about-floater-2">
+      <div class="about-floater-num">Pan India</div>
+      <div class="about-floater-text">Supply Network</div>
+    </div>
+  </div>
+
+  <div class="about-content">
+    <div class="section-label reveal">Our Story</div>
+    <h2 class="section-title reveal reveal-delay-1">
+      Trusted Garlic Processor<br><em>from the Heart of MP</em>
+    </h2>
+    <div class="section-divider reveal reveal-delay-2"></div>
+    <p class="section-text reveal reveal-delay-2">
+      Shree Pragya Industries is one of India's trusted suppliers and manufacturers of premium peeled garlic products. Founded by <strong style="color:var(--gold-light)">Ashish Patidar, Deepak Patidar, and Vinay Patidar</strong>, we operate from Dalauda, Mandsaur — one of India's finest garlic-growing regions in Madhya Pradesh.
+    </p>
+    <p class="section-text reveal reveal-delay-3" style="margin-top:16px;">
+      Our commitment to quality, hygiene, and innovative nitrogen packaging technology has made us a trusted partner for bulk buyers, hotels, restaurants, food processors, and wholesalers across India.
+    </p>
+
+    <div class="about-features">
+      <div class="about-feature reveal reveal-delay-1">
+        <span class="about-feature-icon">🌾</span>
+        <div>
+          <div class="about-feature-title">Prime Growing Region</div>
+          <div class="about-feature-desc">Sourced directly from Mandsaur's fertile farms — known for India's finest garlic quality and yield.</div>
+        </div>
+      </div>
+      <div class="about-feature reveal reveal-delay-2">
+        <span class="about-feature-icon">🏭</span>
+        <div>
+          <div class="about-feature-title">Advanced Processing Facility</div>
+          <div class="about-feature-desc">State-of-the-art hygienic processing plant with modern peeling, grading and packaging lines.</div>
+        </div>
+      </div>
+      <div class="about-feature reveal reveal-delay-3">
+        <span class="about-feature-icon">🚚</span>
+        <div>
+          <div class="about-feature-title">Pan-India Distribution</div>
+          <div class="about-feature-desc">Fast dispatch with cold-chain logistics to hotels, restaurants, food processors, and wholesale markets across India.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section id="why">
+  <div style="text-align:center; max-width:600px; margin:0 auto 0;">
+    <div class="section-label reveal" style="justify-content:center;">Why Choose Us</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">The <em>Shree Pragya</em> Advantage</h2>
+    <div class="section-divider reveal reveal-delay-2" style="margin:24px auto;"></div>
+    <p class="section-text reveal reveal-delay-2" style="text-align:center;margin:0 auto;">From farm selection to dispatch, every step is engineered for maximum quality, freshness, and reliability.</p>
+  </div>
+  <div class="why-grid" style="margin-top:60px;">
+    <div class="why-card reveal">
+      <span class="why-card-num">01</span>
+      <span class="why-card-icon">🌿</span>
+      <div class="why-card-title">Farm Fresh Garlic</div>
+      <div class="why-card-desc">Directly sourced from the best farms in Mandsaur — India's garlic capital — ensuring peak freshness and flavour.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <span class="why-card-num">02</span>
+      <span class="why-card-icon">🧹</span>
+      <div class="why-card-title">Hygienic Processing</div>
+      <div class="why-card-desc">Processed in a food-grade, FSSAI-compliant facility with strict hygiene and zero-contamination protocols.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <span class="why-card-num">03</span>
+      <span class="why-card-icon">🧊</span>
+      <div class="why-card-title">Nitrogen Packaging</div>
+      <div class="why-card-desc">Advanced nitrogen-flush packaging locks freshness for extended shelf life — ideal for bulk buyers and exporters.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-card-num">04</span>
+      <span class="why-card-icon">📦</span>
+      <div class="why-card-title">Bulk Supply Capacity</div>
+      <div class="why-card-desc">High-volume production capacity to meet large and small bulk orders reliably, year-round without interruption.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <span class="why-card-num">05</span>
+      <span class="why-card-icon">💰</span>
+      <div class="why-card-title">Competitive Pricing</div>
+      <div class="why-card-desc">Direct manufacturer pricing with no middlemen — giving you the best value for premium quality garlic products.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal reveal-delay-2">
+      <span class="why-card-num">06</span>
+      <span class="why-card-icon">✅</span>
+      <div class="why-card-title">Quality Assurance</div>
+      <div class="why-card-desc">Every batch undergoes multi-stage quality checks — size grading, purity inspection, and microbiological testing.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal">
+      <span class="why-card-num">07</span>
+      <span class="why-card-icon">🚀</span>
+      <div class="why-card-title">Fast Dispatch</div>
+      <div class="why-card-desc">Reliable, same-week dispatch to all major Indian cities with cold-chain logistics and real-time tracking support.</div>
+      <div class="why-card-line"></div>
+    </div>
+    <div class="why-card reveal reveal-delay-1">
+      <span class="why-card-num">08</span>
+      <span class="why-card-icon">🤝</span>
+      <div class="why-card-title">Custom Bulk Orders</div>
+      <div class="why-card-desc">Tailored packaging, branding, and bulk order management for hotels, restaurant chains, and food manufacturers.</div>
+      <div class="why-card-line"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products">
+  <div class="section-label reveal">Our Products</div>
+  <h2 class="section-title reveal reveal-delay-1">Premium <em>Garlic</em> Range</h2>
+  <div class="section-divider reveal reveal-delay-2"></div>
+  <p class="section-text reveal reveal-delay-2">Four core product lines crafted with precision — from whole peeled cloves to ready-to-use garlic formats for every culinary and industrial need.</p>
+  <div class="products-grid">
+    <div class="product-card reveal">
+      <div class="product-visual">
+        <span class="product-emoji">🧄</span>
+        <span class="product-tag">Bestseller</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Fresh Peeled Garlic</div>
+        <div class="product-desc">Hand-selected, machine-peeled cloves — clean, white, and free from damage. Ready-to-use with no prep time.</div>
+        <div class="product-features">
+          <span class="product-feat">No Preservatives</span>
+          <span class="product-feat">Farm Fresh</span>
+          <span class="product-feat">Bulk Ready</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-delay-1">
+      <div class="product-visual">
+        <span class="product-emoji">💨</span>
+        <span class="product-tag">Extended Shelf Life</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Nitrogen Packed Garlic</div>
+        <div class="product-desc">Peeled garlic cloves sealed under nitrogen gas — dramatically extending freshness without any artificial preservatives.</div>
+        <div class="product-features">
+          <span class="product-feat">N₂ Flushed</span>
+          <span class="product-feat">60+ Day Shelf Life</span>
+          <span class="product-feat">Export Quality</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-delay-2">
+      <div class="product-visual">
+        <span class="product-emoji">🥣</span>
+        <span class="product-tag">Ready to Use</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Garlic Paste</div>
+        <div class="product-desc">Freshly ground, smooth garlic paste — consistent flavour and aroma for food processors, restaurants, and home kitchens.</div>
+        <div class="product-features">
+          <span class="product-feat">No Added Water</span>
+          <span class="product-feat">Restaurant Grade</span>
+          <span class="product-feat">Custom Packs</span>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal reveal-delay-3">
+      <div class="product-visual">
+        <span class="product-emoji">✨</span>
+        <span class="product-tag">Long Shelf Life</span>
+      </div>
+      <div class="product-body">
+        <div class="product-name">Garlic Powder</div>
+        <div class="product-desc">Fine-ground dehydrated garlic powder with intense flavour — perfect for spice blends, packaged foods, and industrial use.</div>
+        <div class="product-features">
+          <span class="product-feat">Fine Mesh</span>
+          <span class="product-feat">12 Month Shelf</span>
+          <span class="product-feat">FSSAI Approved</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PACKAGING -->
+<section id="packaging">
+  <div class="packaging-intro">
+    <div class="section-label reveal">Packaging Options</div>
+    <h2 class="section-title reveal reveal-delay-1">Every Size,<br><em>Every Requirement</em></h2>
+    <div class="section-divider reveal reveal-delay-2"></div>
+    <p class="section-text reveal reveal-delay-2">From retail packs to industrial bulk — we offer 8 standardized packaging sizes with custom labelling and branding options for wholesale buyers.</p>
+  </div>
+  <div class="packaging-grid">
+    <div class="pkg-card reveal">
+      <span class="pkg-icon">🫙</span>
+      <span class="pkg-weight">250g</span>
+      <span class="pkg-label">Retail / Home</span>
+    </div>
+    <div class="pkg-card reveal reveal-delay-1">
+      <span class="pkg-icon">🫙</span>
+      <span class="pkg-weight">500g</span>
+      <span class="pkg-label">Small Kitchen</span>
+    </div>
+    <div class="pkg-card reveal reveal-delay-2 featured">
+      <span class="pkg-icon">📦</span>
+      <span class="pkg-weight">1 kg</span>
+      <span class="pkg-label">Restaurant Use</span>
+    </div>
+    <div class="pkg-card reveal">
+      <span class="pkg-icon">📦</span>
+      <span class="pkg-weight">2 kg</span>
+      <span class="pkg-label">Hotel / Canteen</span>
+    </div>
+    <div class="pkg-card reveal reveal-delay-1 featured">
+      <span class="pkg-icon">🗃️</span>
+      <span class="pkg-weight">5 kg</span>
+      <span class="pkg-label">Cloud Kitchen</span>
+    </div>
+    <div class="pkg-card reveal reveal-delay-2">
+      <span class="pkg-icon">🗃️</span>
+      <span class="pkg-weight">10 kg</span>
+      <span class="pkg-label">Wholesaler</span>
+    </div>
+    <div class="pkg-card reveal">
+      <span class="pkg-icon">🏷️</span>
+      <span class="pkg-weight">20 kg</span>
+      <span class="pkg-label">Industrial</span>
+    </div>
+    <div class="pkg-card reveal reveal-delay-1">
+      <span class="pkg-icon">🏷️</span>
+      <span class="pkg-weight">30 kg</span>
+      <span class="pkg-label">Bulk / Export</span>
+    </div>
+  </div>
+  <div style="margin-top:40px;padding:28px;border:1px solid rgba(201,168,76,0.2);border-radius:4px;background:rgba(201,168,76,0.05);display:flex;align-items:center;gap:20px;flex-wrap:wrap;" class="reveal">
+    <span style="font-size:32px;">💡</span>
+    <div>
+      <div style="font-size:15px;font-weight:600;color:var(--gold-light);margin-bottom:4px;">Need Custom Packaging?</div>
+      <div style="font-size:13px;color:var(--text-muted);">We offer custom sizes, private label branding, and OEM packaging for distributors, food brands, and chain hotels.</div>
+    </div>
+    <a href="#contact" class="btn-secondary" style="margin-left:auto;white-space:nowrap;">Request Custom Pack</a>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process">
+  <div style="text-align:center; max-width:600px; margin: 0 auto 0;">
+    <div class="section-label reveal" style="justify-content:center;">Our Process</div>
+    <h2 class="section-title reveal reveal-delay-1" style="text-align:center;">From <em>Farm to Your Doorstep</em></h2>
+    <div class="section-divider reveal reveal-delay-2" style="margin:24px auto;"></div>
+    <p class="section-text reveal reveal-delay-2" style="text-align:center;margin:0 auto;">A rigorous 6-step process that guarantees every clove reaching you is clean, fresh, and perfectly packed.</p>
+  </div>
+  <div class="process-timeline">
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="ps-content">
+          <div class="ps-num">Step 01</div>
+          <div class="ps-title">Farm Selection</div>
+          <div class="ps-desc">Only premium garlic bulbs from carefully selected, certified farms in the Mandsaur region are procured.</div>
+        </div>
+        <div class="ps-center"><div class="ps-dot">🌾</div></div>
+        <div class="ps-empty"></div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="ps-empty"></div>
+        <div class="ps-center"><div class="ps-dot">🧹</div></div>
+        <div class="ps-content">
+          <div class="ps-num">Step 02</div>
+          <div class="ps-title">Cleaning & Sorting</div>
+          <div class="ps-desc">Garlic bulbs are thoroughly washed, de-rooted, and sorted by size and quality grade before peeling.</div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-content">
+          <div class="ps-num">Step 03</div>
+          <div class="ps-title">Hygienic Peeling</div>
+          <div class="ps-desc">Food-grade mechanical peeling under sterile conditions — no chemicals, no contamination, just pure peeled cloves.</div>
+        </div>
+        <div class="ps-center"><div class="ps-dot">🧄</div></div>
+        <div class="ps-empty"></div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="ps-empty"></div>
+        <div class="ps-center"><div class="ps-dot">🔬</div></div>
+        <div class="ps-content">
+          <div class="ps-num">Step 04</div>
+          <div class="ps-title">Quality Check</div>
+          <div class="ps-desc">Multi-parameter quality inspection: colour, size uniformity, aroma, and microbial testing on every batch.</div>
+        </div>
+      </div>
+      <div class="process-step reveal">
+        <div class="ps-content">
+          <div class="ps-num">Step 05</div>
+          <div class="ps-title">Nitrogen Packing</div>
+          <div class="ps-desc">Approved cloves are sealed in nitrogen-flushed pouches — eliminating oxygen to preserve freshness and extend shelf life.</div>
+        </div>
+        <div class="ps-center"><div class="ps-dot">💨</div></div>
+        <div class="ps-empty"></div>
+      </div>
+      <div class="process-step reveal reveal-delay-1">
+        <div class="ps-empty"></div>
+        <div class="ps-center"><div class="ps-dot">🚚</div></div>
+        <div class="ps-content">
+          <div class="ps-num">Step 06</div>
+          <div class="ps-title">Fast Dispatch</div>
+          <div class="ps-desc">Packed orders are dispatched same-day or next-day via temperature-controlled logistics to any Indian city.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INDIA SUPPLY NETWORK -->
+<section id="supply">
+  <div class="supply-inner">
+    <div class="india-map-wrap reveal">
+      <svg class="india-svg" viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="mapGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="rgba(201,168,76,0.15)"/>
+            <stop offset="100%" stop-color="transparent"/>
+          </radialGradient>
+        </defs>
+        <!-- Simplified India outline -->
+        <ellipse cx="200" cy="240" rx="180" ry="210" fill="url(#mapGlow)" opacity="0.5"/>
+        <!-- India map (simplified polygon) -->
+        <path d="M155 30 L185 25 L220 32 L255 28 L280 40 L300 55 L310 75 L320 100 L330 120 L335 145 L340 170 L342 200 L338 225 L330 248 L318 268 L302 285 L288 300 L272 318 L258 340 L248 360 L240 375 L232 390 L220 405 L210 418 L200 428 L192 418 L182 400 L170 385 L160 368 L152 350 L145 330 L140 310 L135 290 L128 268 L118 248 L108 228 L95 208 L82 185 L75 160 L72 135 L78 110 L88 88 L102 68 L120 52 L138 40 Z" fill="rgba(45,80,22,0.25)" stroke="rgba(201,168,76,0.4)" stroke-width="1.5"/>
+        <!-- Kashmir region -->
+        <path d="M155 30 L145 20 L160 10 L185 8 L200 15 L185 25 Z" fill="rgba(45,80,22,0.2)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+        <!-- Northeast -->
+        <path d="M300 55 L315 45 L335 50 L345 65 L335 75 L320 80 L310 75 Z" fill="rgba(45,80,22,0.2)" stroke="rgba(201,168,76,0.3)" stroke-width="1"/>
+        <!-- Sri Lanka hint -->
+        <ellipse cx="220" cy="445" rx="12" ry="16" fill="rgba(45,80,22,0.15)" stroke="rgba(201,168,76,0.3)" stroke-width="0.8"/>
+
+        <!-- Mandsaur/Dalauda marker (approx center-west MP) -->
+        <circle cx="185" cy="195" r="8" fill="rgba(201,168,76,0.2)" stroke="var(--gold)" stroke-width="1.5">
+          <animate attributeName="r" values="8;14;8" dur="2.5s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="1;0.3;1" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="185" cy="195" r="5" fill="var(--gold)" class="india-pin"/>
+        <text x="198" y="192" fill="#E8C97A" font-size="10" font-family="Jost, sans-serif" font-weight="600">Mandsaur</text>
+        <text x="198" y="205" fill="rgba(201,168,76,0.6)" font-size="9" font-family="Jost, sans-serif">Madhya Pradesh</text>
+
+        <!-- Supply dots -->
+        <circle cx="200" cy="100" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="208" y="104" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Delhi</text>
+        <circle cx="310" cy="170" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="318" y="174" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Kolkata</text>
+        <circle cx="130" cy="300" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="90" y="304" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Mumbai</text>
+        <circle cx="225" cy="355" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="233" y="359" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Bangalore</text>
+        <circle cx="240" cy="290" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="248" y="294" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Hyderabad</text>
+        <circle cx="270" cy="120" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="278" y="124" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Lucknow</text>
+        <circle cx="115" cy="185" r="3.5" fill="var(--green-pale)" opacity="0.8"/>
+        <text x="70" y="189" fill="rgba(140,197,107,0.7)" font-size="8" font-family="Jost,sans-serif">Ahmedabad</text>
+
+        <!-- Supply lines from Mandsaur -->
+        <line x1="185" y1="195" x2="200" y2="100" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="310" y2="170" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="130" y2="300" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="225" y2="355" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="240" y2="290" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="270" y2="120" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+        <line x1="185" y1="195" x2="115" y2="185" stroke="rgba(201,168,76,0.2)" stroke-width="0.8" stroke-dasharray="3,3"/>
+      </svg>
+    </div>
+    <div>
+      <div class="section-label reveal">Supply Network</div>
+      <h2 class="section-title reveal reveal-delay-1">Supplying<br><em>Across All of India</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="section-text reveal reveal-delay-2">Our robust logistics network spans every major Indian city — from metro food hubs to Tier-2 and Tier-3 markets. Wherever you are, we deliver fresh.</p>
+      <div class="supply-highlights reveal reveal-delay-3">
+        <div class="supply-highlight">
+          <span class="sh-icon">🏙️</span>
+          <div>
+            <div class="sh-title">Metro Cities</div>
+            <div class="sh-text">Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Kolkata — regular scheduled deliveries.</div>
+          </div>
+        </div>
+        <div class="supply-highlight">
+          <span class="sh-icon">🏘️</span>
+          <div>
+            <div class="sh-title">Regional Markets</div>
+            <div class="sh-text">Pune, Ahmedabad, Surat, Indore, Bhopal, Nagpur, Jaipur and all major wholesale mandis.</div>
+          </div>
+        </div>
+        <div class="supply-highlight">
+          <span class="sh-icon">🌐</span>
+          <div>
+            <div class="sh-title">Export Inquiries Welcome</div>
+            <div class="sh-text">Export-quality nitrogen packed garlic available for international buyers — contact us for documentation support.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal">
+      <span class="stat-num" data-target="1000"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <div class="stat-label">Satisfied Customers</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-1">
+      <span class="stat-num" data-target="500"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <div class="stat-label">Tons Processed</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-2">
+      <span class="stat-num" data-target="20"><span class="count">0</span><span class="stat-suffix">+</span></span>
+      <div class="stat-label">Cities Served</div>
+    </div>
+    <div class="stat-item reveal reveal-delay-3">
+      <span class="stat-num" data-target="100"><span class="count">0</span><span class="stat-suffix">%</span></span>
+      <div class="stat-label">Quality Commitment</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-label reveal">Testimonials</div>
+  <h2 class="section-title reveal reveal-delay-1">Trusted by <em>Industry Leaders</em></h2>
+  <div class="section-divider reveal reveal-delay-2"></div>
+  <div class="testi-grid">
+    <div class="testi-card reveal">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">The freshness and quality of Shree Pragya's nitrogen-packed garlic is unmatched. Our kitchen efficiency has improved tremendously — no more prep time wasted on peeling.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">👨‍🍳</div>
+        <div>
+          <div class="testi-name">Rajesh Sharma</div>
+          <div class="testi-role">Head Chef, Grand Heritage Hotel</div>
+          <div class="testi-location">📍 Mumbai</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-1">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">Consistent quality, competitive pricing, and always on-time delivery. Shree Pragya has been our trusted garlic supplier for bulk orders for our chain of restaurants.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">🏢</div>
+        <div>
+          <div class="testi-name">Priya Agarwal</div>
+          <div class="testi-role">Purchase Manager, Agarwal Food Chain</div>
+          <div class="testi-location">📍 Delhi NCR</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <div class="testi-text">We've tried many suppliers in Madhya Pradesh but Shree Pragya stands out — their garlic paste is aromatic, fresh, and ideal for our masala manufacturing process.</div>
+      <div class="testi-author">
+        <div class="testi-avatar">🏭</div>
+        <div>
+          <div class="testi-name">Suresh Patel</div>
+          <div class="testi-role">Director, Patel Spice Industries</div>
+          <div class="testi-location">📍 Ahmedabad</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <div>
+      <div class="section-label reveal">Get In Touch</div>
+      <h2 class="section-title reveal reveal-delay-1">Request a <em>Free Quote</em></h2>
+      <div class="section-divider reveal reveal-delay-2"></div>
+      <p class="section-text reveal reveal-delay-2">Whether you're a hotel, restaurant, food processor, or wholesale distributor — we have the right garlic solution for you. Reach out for pricing and samples.</p>
+
+      <div style="margin-top:36px;" class="reveal reveal-delay-3">
+        <div class="contact-detail">
+          <span class="contact-detail-icon">📍</span>
+          <div>
+            <div class="contact-detail-label">Location</div>
+            <div class="contact-detail-text">Shree Pragya Industries<br><small>Dalauda, Mandsaur, Madhya Pradesh, India</small></div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">👨‍👨‍👦</span>
+          <div>
+            <div class="contact-detail-label">Founders</div>
+            <div class="contact-detail-text">Ashish Patidar · Deepak Patidar · Vinay Patidar</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">🌏</span>
+          <div>
+            <div class="contact-detail-label">Supply Area</div>
+            <div class="contact-detail-text">All Over India &amp; Export Inquiries Welcome</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <span class="contact-detail-icon">💬</span>
+          <div>
+            <div class="contact-detail-label">WhatsApp Inquiry</div>
+            <div class="contact-detail-text" style="color:var(--green-pale);">+91 72239 03797 — Tap to message instantly</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal reveal-delay-2">
+      <div style="padding:40px;background:rgba(255,255,255,0.025);border:1px solid rgba(255,255,255,0.08);border-radius:4px;">
+        <div style="font-family:var(--font-serif);font-size:22px;color:var(--gold-light);margin-bottom:24px;">Send Your Inquiry</div>
+        <div class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Your Name</label>
+              <input type="text" class="form-input" placeholder="Full Name" id="cName">
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mobile Number</label>
+              <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" id="cPhone">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Business Name</label>
+            <input type="text" class="form-input" placeholder="Hotel / Restaurant / Company Name" id="cBusiness">
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">Product Required</label>
+              <select class="form-select" id="cProduct">
+                <option value="">Select Product</option>
+                <option>Fresh Peeled Garlic</option>
+                <option>Nitrogen Packed Garlic</option>
+                <option>Garlic Paste</option>
+                <option>Garlic Powder</option>
+                <option>Multiple Products</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Quantity Required</label>
+              <select class="form-select" id="cQty">
+                <option value="">Select Quantity</option>
+                <option>250g – 1kg (Trial/Retail)</option>
+                <option>5kg – 10kg (Restaurant)</option>
+                <option>20kg – 50kg (Hotel/Bulk)</option>
+                <option>100kg+ (Wholesale/Industrial)</option>
+                <option>1 Ton+ (Distributor)</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message / Special Requirements</label>
+            <textarea class="form-textarea" placeholder="Tell us about your requirements, delivery location, frequency, etc." id="cMessage"></textarea>
+          </div>
+          <button class="form-submit" onclick="submitForm()">🚀 Send Inquiry & Get Quote</button>
+        </div>
+        <div class="form-success" id="formSuccess">
+          <div style="font-size:32px;margin-bottom:12px;">✅</div>
+          <div style="font-size:18px;font-family:var(--font-serif);color:var(--green-pale);margin-bottom:8px;">Inquiry Sent Successfully!</div>
+          <div style="font-size:13px;color:var(--text-muted);">Thank you! Our team will contact you within 24 hours with pricing and availability.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-name">Shree Pragya Industries</div>
+      <div class="footer-brand-text">India's trusted premium peeled garlic supplier and manufacturer from Dalauda, Mandsaur, Madhya Pradesh. Supplying hotels, restaurants, food processors, and wholesalers across India.</div>
+      <div class="footer-founders">
+        <div class="founder-chip"><span></span>Ashish Patidar</div>
+        <div class="founder-chip"><span></span>Deepak Patidar</div>
+        <div class="founder-chip"><span></span>Vinay Patidar</div>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Products</div>
+      <div class="footer-links">
+        <a href="#products">Fresh Peeled Garlic</a>
+        <a href="#products">Nitrogen Packed Garlic</a>
+        <a href="#products">Garlic Paste</a>
+        <a href="#products">Garlic Powder</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Packaging</div>
+      <div class="footer-links">
+        <a href="#packaging">250g / 500g Packs</a>
+        <a href="#packaging">1kg / 2kg / 5kg</a>
+        <a href="#packaging">10kg / 20kg / 30kg</a>
+        <a href="#packaging">Custom Bulk Orders</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Company</div>
+      <div class="footer-links">
+        <a href="#about">About Us</a>
+        <a href="#why">Why Choose Us</a>
+        <a href="#process">Our Process</a>
+        <a href="#supply">Supply Network</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      © 2024 <span>Shree Pragya Industries</span>. Dalauda, Mandsaur, MP, India. All Rights Reserved.
+    </div>
+    <div class="social-links">
+      <a href="https://wa.me/917223903797" target="_blank" class="social-link" title="WhatsApp">💬</a>
+      <a href="#" class="social-link" title="Facebook">📘</a>
+      <a href="#" class="social-link" title="Instagram">📸</a>
+      <a href="#" class="social-link" title="LinkedIn">💼</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOAT -->
+<a href="https://wa.me/917223903797?text=Hello!%20I%20am%20interested%20in%20your%20garlic%20products.%20Please%20share%20pricing%20and%20availability." target="_blank" class="whatsapp-float" aria-label="WhatsApp Inquiry">
+  <span class="wa-tooltip">WhatsApp Inquiry</span>
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<script>
+// ── NAVBAR SCROLL ──
+window.addEventListener('scroll', () => {
+  document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// ── MOBILE MENU ──
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+// ── PARTICLES ──
+(function() {
+  const container = document.getElementById('particles');
+  const count = 35;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    const size = Math.random() * 4 + 1;
+    p.style.cssText = `
+      width:${size}px; height:${size}px;
+      left:${Math.random() * 100}%;
+      animation-delay:${Math.random() * 15}s;
+      animation-duration:${12 + Math.random() * 15}s;
+      opacity:0;
+    `;
+    container.appendChild(p);
+  }
+})();
+
+// ── REVEAL ON SCROLL ──
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+reveals.forEach(el => observer.observe(el));
+
+// ── COUNTER ANIMATION ──
+function animateCounter(el, target, suffix) {
+  const duration = 2000;
+  const start = performance.now();
+  function step(now) {
+    const progress = Math.min((now - start) / duration, 1);
+    const eased = 1 - Math.pow(1 - progress, 3);
+    const current = Math.floor(eased * target);
+    el.textContent = current.toLocaleString('en-IN') + suffix;
+    if (progress < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+// Hero stat counters
+document.querySelectorAll('.hero-stat-num').forEach(el => {
+  const target = parseInt(el.dataset.target);
+  const suffix = el.textContent.includes('+') ? '+' : (el.textContent.includes('%') ? '%' : '+');
+  let started = false;
+  const io = new IntersectionObserver(([e]) => {
+    if (e.isIntersecting && !started) {
+      started = true;
+      animateCounter(el, target, el.dataset.target === '100' ? '%' : '+');
+    }
+  });
+  io.observe(el);
+});
+
+// Stats section counters
+document.querySelectorAll('.stat-item').forEach(item => {
+  const numEl = item.querySelector('.stat-num');
+  const countEl = item.querySelector('.count');
+  const suffixEl = item.querySelector('.stat-suffix');
+  if (!numEl) return;
+  const target = parseInt(numEl.dataset.target);
+  const suffix = suffixEl.textContent;
+  let started = false;
+  const io = new IntersectionObserver(([e]) => {
+    if (e.isIntersecting && !started) {
+      started = true;
+      const dur = 2200;
+      const st = performance.now();
+      function step(now) {
+        const p = Math.min((now - st) / dur, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        countEl.textContent = Math.floor(eased * target).toLocaleString('en-IN');
+        if (p < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    }
+  });
+  io.observe(item);
+});
+
+// ── CONTACT FORM ──
+function submitForm() {
+  const name = document.getElementById('cName').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  if (!name || !phone) {
+    alert('Please fill in your Name and Mobile Number to proceed.');
+    return;
+  }
+  document.getElementById('contactForm').style.display = 'none';
+  document.getElementById('formSuccess').style.display = 'block';
+  // In production: send to backend / WhatsApp API
+}
+
+// ── SMOOTH ACTIVE NAV HIGHLIGHT ──
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.nav-links a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(s => {
+    if (window.scrollY >= s.offsetTop - 200) current = s.id;
+  });
+  navLinks.forEach(a => {
+    a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold-light)' : '';
+  });
+}, { passive: true });
+</script>
+</body>
+</html>
